@@ -1,0 +1,17 @@
+{
+    "name": "egor-novikov/first_weack",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Egor Novikov",
+            "email": "egoriyNovikov@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "larapack/dd": "1.*"
+    }
+}
