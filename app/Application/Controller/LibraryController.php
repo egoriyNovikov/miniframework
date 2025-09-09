@@ -1,8 +1,10 @@
 <?php
 namespace App\Application\Controller;
 
-class LibraryController extends ApiController {
+class LibraryController extends ApiController 
+{
   public function get() {
-    echo 123;
+    $db = $this->db;
+    $user = $db->fetchAll("SELECT * FROM users");
   }
 }

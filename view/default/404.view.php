@@ -6,6 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  
+ <h1><?=$title;?></h1>
+ <pre><?=$error?></pre>
 </body>
 </html>

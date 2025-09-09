@@ -6,14 +6,9 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Home</h1>
+  <h1><?=$title?></h1>
   <pre>
-    <? foreach($users as $u) { ?>
-      <?=$u['id']."<br>";?>
-      <?=$u['name']."<br>";?>
-      <?=$u['email']."<br>";?>
-      <?=$u['password']."<br>";?>
-    <? } ?>
+    <?=$error?>
   </pre>
 </body>
 </html>
