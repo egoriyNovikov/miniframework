@@ -14,4 +14,8 @@ abstract class ApiController
     header("Allow: GET, POST, OPTIONS, PUT, DELETE");
     $this->db = Database::getInstance();
   }
+
+  public function toJson(object|array|null $data):string {
+    return json_encode(['result' => $data], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+  }
 }

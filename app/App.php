@@ -1,8 +1,6 @@
 <?php
 namespace App;
 
-use App\Application\Controller\LibraryController;
-use App\Application\Controller\PageController;
 use App\Router\Rout;
 use App\Router\Router;
 
@@ -10,9 +8,8 @@ class App
 {
   public static function start() 
   {
-      Router::get('/', PageController::class, 'home');
-      Router::get('/about', PageController::class, 'about');
-      Router::get('/api/', LibraryController::class, 'get');
+      include __DIR__ . "/../router/view.php";
+      include __DIR__ . "/../router/api.php";
       $router = new Router();
       $rout = (new Rout())->handle($router->list());
   }

@@ -6,5 +6,6 @@ class LibraryController extends ApiController
   public function get() {
     $db = $this->db;
     $user = $db->fetchAll("SELECT * FROM users");
+    return $this->toJson($user);
   }
 }

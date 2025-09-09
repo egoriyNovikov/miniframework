@@ -12,8 +12,8 @@ class Rout implements RoutInterface
       if($_SERVER['REQUEST_URI'] == $rout['url']) {
         $method = $rout['method'];
         $page = new $rout['controller']();
-        $page->$method();
         $found = true;
+        echo $page->$method();
         break;
       }
     }
